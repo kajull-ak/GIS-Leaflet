@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+
+
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="home.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Traffic Controller</title>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <!-- <i class='bx bx-train' ></i> -->
+      <i class='bx bx-menu' ></i> 
+      <span class="logo_name">Traffic Controller</span>
+    </div>
+    <ul class="nav-links">
+      <!-- <li>
+        <a href="#">
+          <i class='bx bxs-id-card'></i>
+          <span class="link_name">maintenance responsible</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">dispatcher</a></li>
+        </ul>
+      </li> -->
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-shape-triangle'></i>
+            <span class="link_name">Manage Rails</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Rails</a></li>
+          <li><a href="#">Set Optimal Speed</a></li>
+          <li><a href="#">Direct Charts To path</a></li>
+
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-train'></i>
+            <span class="link_name">Manage Carts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Carts</a></li>
+          <li><a href="#">Set First cart to go</a></li>
+          <li><a href="#">Set last cart to go</a></li>
+        </ul>
+      </li>
+      <li>
+
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-chat' ></i>
+              <span class="link_name">communicate with crew</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">communicate with crew</a></li>
+            <li><a href="#">Main Responsible</a></li>
+            <li><a href="#">Main Manager</a></li>
+            <li><a href="#">signaling technician</a></li>
+          </ul>
+        </li>
+        <li>
+<!--         <a href="#">
+          <i class='bx bxs-traffic' ></i>
+          <span class="link_name">Traffic Controlor</span>
+        </a> -->
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">signaling technican</a></li>
+        </ul>
+      </li>
+      <li>
+      <!--   <a href="#">
+          <i class='bx bx-broadcast'></i>
+          <span class="link_name">signaling technican</span>
+        </a> -->
+<!--         <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">signaling technican</a></li>
+        </ul> -->
+      </li>
+      <!-- <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-map-pin' ></i>
+            <span class="link_name">Manage geographic data</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage geographic data</a></li>
+          <li><a href="#">Save Data</a></li>
+          <li><a href="#">Delete Data</a></li>
+          <li><a href="#">Show Data</a></li>
+        </ul>
+      </li> -->
+      <!-- <li>
+        <a href="#">
+          <i class='bx bx-error' ></i>
+          <span class="link_name">Announce Problem solved</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">maintenance responsible</a></li>
+        </ul>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name"><a href="/test2/map/log-in/log-in.html">LOG OUT</a></div>
+        <div class="job">contact support</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  
+  <section class="home-section" id="map" >
+    
+    <div class="home-content">
+      
+      <!-- <i class='bx bx-menu' ></i>  -->
+      
+      
+      
+     
+      
+    </div>
+ <!--    <section id="map">aaa</div> -->
+  </section>
+
+
+
+
+
+
+
+
+  <script src="map.js"></script>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
